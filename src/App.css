@@ -1,0 +1,170 @@
+video::-webkit-media-controls {
+  display: none;
+}
+
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+}
+
+.left-side {
+  border-right: 2px solid #4F46E5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.head {}
+
+.body {
+  padding: 1rem 0;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text-indigo {
+  color: #4F46E5;
+}
+
+.input-box {
+  padding: 2rem 0;
+}
+
+.pickup {
+  background-color: aliceblue;
+  display: flex;
+}
+
+.pickup-input {
+  width: 80%;
+  font-size: 2rem;
+  height: 50px;
+  padding-left: 1rem;
+  border: 2px solid #242424;
+  border-right: 0;
+}
+
+.pickup-input input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #242424;
+  background-color: #F7F7F7;
+}
+
+.auto-complete {
+  width: 100%;
+  height: 100%;
+}
+
+.pickup-location {
+  width: 20%;
+  align-items: center;
+  border: 2px solid #4F46E5;
+  background-color: #4F46E5;
+  color: #F7F7F7;
+  cursor: pointer;
+}
+
+.location-crosshair svg {
+  width: 20px;
+  height: 20px;
+
+}
+
+.locate-label {
+  padding-left: 0.5rem;
+}
+
+.drop {
+  margin-top: 1rem;
+}
+
+.drop-input {
+  width: 100%;
+  border: 2px solid #242424;
+}
+
+.book-div {
+  font-size: 1.5rem;
+  color: #F7F7F7;
+  background-color: #4F46E5;
+  border: 2px solid #4F46E5;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 425px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .left-side {
+    order: 2
+  }
+
+  .right-side {
+    order: 1;
+  }
+
+  .info-card .head {
+    display: none;
+  }
+}
+
+/* Maps */
+
+.right-side {}
+
+.map-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output {
+  border: 1px solid #242424;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 700;
+}
